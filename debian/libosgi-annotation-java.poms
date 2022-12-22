@@ -1,0 +1,1 @@
+debian/pom.xml --no-parent --usj-name=osgi.annotation --relocate=org.osgi:org.osgi.annotation

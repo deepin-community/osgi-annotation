@@ -1,0 +1,14 @@
+#!/usr/bin/make -f
+
+export JAVA_HOME := /usr/lib/jvm/default-java
+
+MAVEN_REPO := https://repo1.maven.org/maven2/org/osgi/osgi.annotation
+VERSION := $(shell dpkg-parsechangelog | sed -n 's/^Version: //p' | sed -e 's/-[^-]*$$//')
+JAR_NAME := osgi.annotation
+PACKAGE := libosgi-annotation-java
+
+%:
+	dh $@ --with javahelper --with jh_maven_repo_helper
+
+get-orig-pom:
+	wget --user-agent="" -O debian/pom.xml $(MAVEN_REPO)/$(VERSION)/osgi.annotation-$(VERSION).pom

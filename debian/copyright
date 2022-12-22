@@ -1,0 +1,16 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: OSGi Annotation
+Upstream-Contact: OSGi Alliance (http://www.osgi.org/)
+Source: http://repo1.maven.org/maven2/org/osgi/org.osgi.annotation/
+
+Files: *
+Copyright: Contributors to the Eclipse Foundation
+License: Apache-2.0
+
+Files: debian/*
+Copyright: 2015-2021, Markus Koschany <apo@debian.org>
+License: Apache-2.0
+
+License: Apache-2.0
+ On Debian systems the complete text of the Apache License Version 2.0,
+ can be found in /usr/share/common-licenses/Apache-2.0.

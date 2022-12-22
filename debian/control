@@ -1,0 +1,45 @@
+Source: osgi-annotation
+Section: java
+Priority: optional
+Maintainer: Debian Java Maintainers <pkg-java-maintainers@lists.alioth.debian.org>
+Uploaders:
+ Markus Koschany <apo@debian.org>
+Build-Depends:
+ ant,
+ debhelper-compat (= 13),
+ default-jdk,
+ javahelper,
+ maven-repo-helper
+Standards-Version: 4.6.0
+Vcs-Git: https://salsa.debian.org/java-team/osgi-annotation.git
+Vcs-Browser: https://salsa.debian.org/java-team/osgi-annotation
+Homepage: https://www.osgi.org/
+
+Package: libosgi-annotation-java
+Architecture: all
+Depends:
+ ${java:Depends},
+ ${misc:Depends}
+Suggests:
+ libosgi-annotation-java-doc
+Description: Java OSGi API - annotation module
+ OSGi, for Open Services Gateway initiative framework, is a module system and
+ service platform for the Java programming language.
+ .
+ This package contains the OSGi annotation module.
+ .
+ On top of OSGi Core it provides additional services to help dynamic
+ components.
+
+Package: libosgi-annotation-java-doc
+Architecture: all
+Section: doc
+Depends:
+ ${misc:Depends}
+Recommends:
+ ${java:Recommends}
+Description: Javadoc for Java OSGi API - annotation module
+ OSGi, for Open Services Gateway initiative framework, is a module system and
+ service platform for the Java programming language.
+ .
+ This package contains Javadoc HTML documentation for libosgi-annotation-java.

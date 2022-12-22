@@ -1,0 +1,2 @@
+# OSGi has been copied by several projects and each of them republished the OSGi jar under their own namespace, so we try to fix it here
+s/org.apache.felix/org.osgi/ osgi.annotation * * * *
